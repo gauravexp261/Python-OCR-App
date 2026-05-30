@@ -70,33 +70,33 @@ class PatientDetailsParser(MedicalDocParser):
         }
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    t = '''
-Patient Medical Record
+#     t = '''
+# Patient Medical Record
 
-Patient Information
-Jerry Lucas
+# Patient Information
+# Jerry Lucas
 
-(279) 920-8204
-4218 Wheeler Ridge Dr
+# (279) 920-8204
+# 4218 Wheeler Ridge Dr
 
-Buffalo, New York, 14201
-United States
+# Buffalo, New York, 14201
+# United States
 
-In Case of Emergency
+# In Case of Emergency
 
-Birth Date
-May 2 1998
+# Birth Date
+# May 2 1998
 
-Weight:
-57
+# Weight:
+# 57
 
-Height:
-170
+# Height:
+# 170
 
-Joe Lucas
-'''
+# Joe Lucas
+# '''
 
-    pp = PatientDetailsParser(t)
-    print(pp.parse())
+#     pp = PatientDetailsParser(t)
+#     print(pp.parse())
