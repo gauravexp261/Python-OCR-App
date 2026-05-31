@@ -14,7 +14,7 @@ Th regex is aligned only to type of PDFs present in resources folder.
 Medical Document
         │
         ▼
- OCR Extraction (pdf2image for PDF to image, OpenCV for image processing, pytesseract)
+ OCR Extraction (pdf2image for PDF to image, OpenCV for image processing, pytesseract for image to text)
         │
         ▼
  Custom Parsers (Used Regex to extract usefull text)
