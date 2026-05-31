@@ -2,7 +2,7 @@
 
 ## Overview
 ```text
-* The goal of this project is have hands on Python project (Modular coding, FastAPI endpoint, Streamlit App).
+* The goal of this project is to have hands on Python project (Modular coding, FastAPI endpoint, Streamlit App).
 * Medical OCR System is an end-to-end document processing application that extracts structured information from medical documents such as patient records and prescriptions.
 * The application uses OCR (Optical Character Recognition) to extract text from uploaded documents and then applies custom parsing logic using Python Regular Expressions to convert unstructured text into structured JSON output.
 * The regex is aligned only to type of PDFs present in resources folder.
