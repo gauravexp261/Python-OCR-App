@@ -5,6 +5,9 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 import os
 from pydantic import BaseModel
 import shutil
+from logging_setup import setup_logger
+
+logger = setup_logger('main')
 
 
 
@@ -34,11 +37,14 @@ def process(file: UploadFile = File(...), file_format: str = Form(...)):
             shutil.copyfileobj(file.file, buffer)
 
         result = processing_pipeline(file_path, file_format)
+        if result:
+            logger.info('pipeline ran succesfully')
         return result
-
     except ValueError as e:
+        logger.error('Value error {e}')
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
+        logger.error('Error {e}')
         raise HTTPException(status_code=500, detail=f"Processing failed: {str(e)}")
     finally:
         if os.path.exists(file_path):  # Clean up uploaded file

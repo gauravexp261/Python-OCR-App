@@ -1,0 +1,27 @@
+2026-05-31 09:21:10,665 - parser_patient - INFO - PatientDetailsParser initialized successfully
+2026-05-31 09:21:10,665 - parser_patient - INFO - Starting patient details parsing
+2026-05-31 09:21:10,666 - parser_patient - DEBUG - Field extracted for patternPatient Information\s*(.*?)\s*\(\d{3}\)
+2026-05-31 09:21:10,666 - parser_patient - DEBUG - Field extracted for patternList any Medical Problems.*?:\s*(.*?)(?=Name of Insurance Company|Medical Insurance Details)
+2026-05-31 09:21:10,667 - parser_patient - DEBUG - removed data noise
+2026-05-31 09:21:10,667 - parser_patient - DEBUG - Field extracted for pattern(\(\d{3}\)\s*\d{3}-\d{4})
+2026-05-31 09:21:10,678 - parser_patient - DEBUG - Field extracted for patternHave you had the Hepatitis B vaccination\?.*?(Yes|No)
+2026-05-31 09:21:10,678 - parser_patient - DEBUG - Cleaned medical problem, extracted first line: 'N/A'
+2026-05-31 09:21:10,678 - parser_patient - INFO - Parsing completed successfully.
+2026-05-31 09:22:44,266 - parser_patient - INFO - PatientDetailsParser initialized successfully
+2026-05-31 09:22:44,267 - parser_patient - INFO - Starting patient details parsing
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - Field extracted for patternPatient Information\s*(.*?)\s*\(\d{3}\)
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - Field extracted for patternList any Medical Problems.*?:\s*(.*?)(?=Name of Insurance Company|Medical Insurance Details)
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - removed data noise
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - Field extracted for pattern(\(\d{3}\)\s*\d{3}-\d{4})
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - Field extracted for patternHave you had the Hepatitis B vaccination\?.*?(Yes|No)
+2026-05-31 09:22:44,267 - parser_patient - DEBUG - Cleaned medical problem, extracted first line: 'Migraine'
+2026-05-31 09:22:44,267 - parser_patient - INFO - Parsing completed successfully.
+2026-05-31 09:26:09,938 - parser_patient - INFO - PatientDetailsParser initialized successfully
+2026-05-31 09:26:09,938 - parser_patient - INFO - Starting patient details parsing
+2026-05-31 09:26:09,940 - parser_patient - DEBUG - Field extracted for patternPatient Information\s*(.*?)\s*\(\d{3}\)
+2026-05-31 09:26:09,940 - parser_patient - DEBUG - Field extracted for patternList any Medical Problems.*?:\s*(.*?)(?=Name of Insurance Company|Medical Insurance Details)
+2026-05-31 09:26:09,940 - parser_patient - DEBUG - removed data noise
+2026-05-31 09:26:09,941 - parser_patient - DEBUG - Field extracted for pattern(\(\d{3}\)\s*\d{3}-\d{4})
+2026-05-31 09:26:09,941 - parser_patient - DEBUG - Field extracted for patternHave you had the Hepatitis B vaccination\?.*?(Yes|No)
+2026-05-31 09:26:09,941 - parser_patient - DEBUG - Cleaned medical problem, extracted first line: 'Migraine'
+2026-05-31 09:26:09,941 - parser_patient - INFO - Parsing completed successfully.

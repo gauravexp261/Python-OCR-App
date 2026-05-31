@@ -1,22 +1,45 @@
 from generic_parser import MedicalDocParser
 import re
+from logging_setup import setup_logger
+
+logger = setup_logger('parser_PrescriptionParser')
 
 class PrescriptionParser(MedicalDocParser):
     def __init__(self, text):
-        super().__init__(text)
+        try:
+            super().__init__(text)
+            logger.info("PrescriptionParser initialized successfully")
+        except Exception as e:
+            logger.error(f"Failed to initialize PrescriptionParser: {e}")
+            raise
+    
         
     def get_field(self,pattern, flags = 0):
-        match = re.findall(pattern, self.text,flags=flags)
-        if len(match) > 0:
-            return match[0].strip() 
+        try:
+            match = re.findall(pattern, self.text,flags=flags)
+            if match:
+                logger.info(f'get_field ran and recieved match')
+                if len(match) > 0:
+                    return match[0].strip() 
+            else:
+                logger.info(f'get_field ran but did not recieved any match')
+        except Exception as e:
+            logger.error(f" Unexpected error  in get field {e}")
         
     def parse(self):
-        return {'patient_name':self.get_field('Name:(.*)Date:'),
-                'patient_address':self.get_field('Address:(.*)\n'),
-                'patient_medicine':self.get_field('Address[^\n]*(.*)Directions', flags =re.DOTALL),
-                'patient_directions':self.get_field('Directions[^\n]*(.*)Refill', flags =re.DOTALL),
-                'patient_refill':self.get_field('Refill:(.*)times', flags = 0)
-                }
+        try:
+            parsed_data =  {'patient_name':self.get_field('Name:(.*)Date:'),
+                    'patient_address':self.get_field('Address:(.*)\n'),
+                    'patient_medicine':self.get_field('Address[^\n]*(.*)Directions', flags =re.DOTALL),
+                    'patient_directions':self.get_field('Directions[^\n]*(.*)Refill', flags =re.DOTALL),
+                    'patient_refill':self.get_field('Refill:(.*)times', flags = 0)
+                    }
+            if parsed_data:
+                logger.info(f'data parsed')
+            return parsed_data
+        except Exception as e:
+            logger.error(f" Unexpected error while parsing {e}")
+
         
    
 # if __name__ == '__main__':

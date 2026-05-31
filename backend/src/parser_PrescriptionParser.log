@@ -1,0 +1,15 @@
+2026-05-31 09:27:32,393 - parser_PrescriptionParser - INFO - PrescriptionParser initialized successfully
+2026-05-31 09:27:32,394 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:27:32,394 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:27:32,394 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:27:32,395 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:27:32,395 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:27:32,405 - parser_PrescriptionParser - INFO - data parsed
+2026-05-31 09:27:32,405 - parser_PrescriptionParser - ERROR -  Unexpected error while parsing 'PrescriptionParser' object has no attribute 'parsed_data'
+2026-05-31 09:29:29,537 - parser_PrescriptionParser - INFO - PrescriptionParser initialized successfully
+2026-05-31 09:29:29,538 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:29:29,538 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:29:29,538 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:29:29,538 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:29:29,539 - parser_PrescriptionParser - INFO - get_field ran and recieved match
+2026-05-31 09:29:29,539 - parser_PrescriptionParser - INFO - data parsed
