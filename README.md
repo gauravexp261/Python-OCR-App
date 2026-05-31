@@ -1,4 +1,4 @@
-# 🏥 Medical OCR System
+# Medical OCR System
 
 ## Overview
 ```text
